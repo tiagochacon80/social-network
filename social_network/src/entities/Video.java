@@ -56,21 +56,26 @@ public class Video implements ActionsVideos {
 	}
 
 	@Override
-	public void play() {
-		
-		
-	}
-
-	@Override
-	public void pause() {
-		
+	public void play() {		
 		
 	}
 
 	@Override
-	public void like() {
-		
+	public void pause() {		
 		
 	}
+
+	@Override
+	public void like() {		
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Video [title=" + title + ", evaluation=" + evaluation + ", views=" + views + ", likes=" + likes
+				+ ", reproducing=" + reproducing + "]";
+	}
+	
+	
 
 }
