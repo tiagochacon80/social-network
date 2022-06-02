@@ -2,11 +2,10 @@ package entities;
 
 public class User extends People {
 	private String login;
-	private int toAssisted;
+	private int toAssisted;	
 	
 	
-	
-	public User(String name, int age, String sex, String login, int toAssisted) {
+	public User(String name, int age, String sex, String login) {
 		super(name, age, sex);
 		this.login = login;
 		this.toAssisted = 0;
@@ -22,6 +21,11 @@ public class User extends People {
 	}
 	public void setToAssisted(int toAssisted) {
 		this.toAssisted = toAssisted;
+	}
+	@Override
+	public String toString() {
+		//toString is for people
+		return "User[" + super.toString() + "\nlogin=" + login + ", toAssisted=" + toAssisted + "]";
 	}
 	
 	
