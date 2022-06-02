@@ -57,17 +57,17 @@ public class Video implements ActionsVideos {
 
 	@Override
 	public void play() {		
-		
+		this.reproducing = true;
 	}
 
 	@Override
 	public void pause() {		
-		
+		this.reproducing = false;
 	}
 
 	@Override
 	public void like() {		
-		
+		this.likes ++;
 	}
 
 	@Override
